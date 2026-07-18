@@ -266,11 +266,15 @@ height:auto;
 
 flex-direction:column;
 
+transition: transform .5s ease;
+
 }
 
 .left,
 .right{
 
+transition: all .45s ease;
+  
 width:100%;
 
 }
@@ -312,6 +316,40 @@ opacity:0;
 to{
 
 opacity:1;
+
+}
+
+}
+
+.page-change{
+
+animation:pageChange .6s ease;
+
+}
+
+@keyframes pageChange{
+
+0%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+45%{
+
+opacity:0;
+
+transform:scale(.96);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
 
 }
 
