@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Ocean Memory</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/book2.css">
+
+</head>
+
+<body>
+
+<div class="book">
+
+<div class="left">
+
+<div class="polaroid" onclick="openPhoto()">
+
+<img id="photo">
+
+<span class="caption">
+
+Ocean Memory
+
+</span>
+
+</div>
+
+<div class="sea-star">⭐</div>
+
+<div class="shell">🐚</div>
+
+<div class="bubbles"></div>
+
+</div>
+
+<div class="right">
+
+<h1 id="title"></h1>
+
+<p id="text"></p>
+
+<div class="nav">
+
+<button onclick="prevPage()">
+
+⬅
+
+</button>
+
+<button onclick="nextPage()">
+
+➡
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<audio id="music" loop></audio>
+
+<button id="musicBtn" onclick="toggleMusic()">
+
+🔊 Music
+
+</button>
+
+<div id="lightbox" class="lightbox" onclick="closePhoto()">
+
+<img id="preview">
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/book2.js"></script>
+
+</body>
+
+</html>
