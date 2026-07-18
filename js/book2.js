@@ -27,24 +27,25 @@ loadPage();
 
 function nextPage(){
 
-    if(page < data.pages.length - 1){
+if(page < data.pages.length-1){
 
-        const left = document.querySelector(".left");
-        const right = document.querySelector(".right");
+const book=document.querySelector(".book");
 
-        left.classList.add("animate");
-        right.classList.add("animate");
+book.classList.add("page-change");
 
-        setTimeout(()=>{
+setTimeout(()=>{
 
-            page++;
+page++;
 
-            loadPage();
+loadPage();
 
-            left.classList.remove("animate");
-            right.classList.remove("animate");
+},300);
 
-        },300);
+setTimeout(()=>{
+
+book.classList.remove("page-change");
+
+},600);
 
     }else{
 
@@ -58,13 +59,9 @@ function prevPage(){
 
 if(page > 0){
 
-const left=document.querySelector(".left");
+const book=document.querySelector(".book");
 
-const right=document.querySelector(".right");
-
-left.classList.add("animate");
-
-right.classList.add("animate");
+book.classList.add("page-change");
 
 setTimeout(()=>{
 
@@ -72,11 +69,13 @@ page--;
 
 loadPage();
 
-left.classList.remove("animate");
-
-right.classList.remove("animate");
-
 },300);
+
+setTimeout(()=>{
+
+book.classList.remove("page-change");
+
+},600);
 
 }
 
